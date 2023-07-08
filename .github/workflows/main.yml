@@ -21,7 +21,8 @@ jobs:
 
       - name: Install and Build   # 安装依赖、打包，如果提前已打包好无需这一步
         run: |
-          yarn
+          npm install --global yarn
+          yarn install
           yarn build
           # npm install
           # npm run build
